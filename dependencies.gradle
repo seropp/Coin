@@ -1,0 +1,132 @@
+def KOTLIN_VERSION = '1.7.21'
+def KOTLIN_COROUTINES_VERSION = '1.7.0'
+
+def ANDROIDX_PAGING_VERSION = '3.1.1'
+def ANDROIDX_ROOM_VERSION = '2.5.1'
+
+def DAGGER_VERSION = '2.45'
+
+def OKHTTP_VERSION = '4.6.0'
+def RETROFIT_VERSION = '2.9.0'
+
+def COMPOSE_VERSION = '1.4.0'
+
+ext {
+
+    ANDROID_MIN_SDK_VERSION = 21
+    ANDROID_TARGET_SDK_VERSION = 32
+    ANDROID_COMPILE_SDK_VERSION = 33
+
+    platform = [
+            kotlin     : [
+                    coroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:$KOTLIN_COROUTINES_VERSION",
+                    coroutinesAndroid: "org.jetbrains.kotlinx:kotlinx-coroutines-android:$KOTLIN_COROUTINES_VERSION",
+                    coroutinesTest   : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$KOTLIN_COROUTINES_VERSION",
+                    kotlin           : "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN_VERSION"
+            ],
+            //endregion
+
+            //region JavaX
+            javax      : [
+                    inject: "javax.inject:javax.inject:1"
+            ],
+            androidX   : [
+                    activity             : "androidx.activity:activity-ktx:1.5.1",
+                    annotation           : "androidx.annotation:annotation:1.5.0",
+                    appcompat            : "androidx.appcompat:appcompat:1.5.1",
+                    biometric            : "androidx.biometric:biometric:1.1.0",
+                    browser              : "androidx.browser:browser:1.4.0",
+                    camera2              : "androidx.camera:camera-camera2:1.1.0",
+                    cameralifecycle      : "androidx.camera:camera-lifecycle:1.1.0",
+                    cameraview           : "androidx.camera:camera-view:1.1.0",
+                    constraintlayout     : "androidx.constraintlayout:constraintlayout:2.1.4",
+                    coordinatorlayout    : "androidx.coordinatorlayout:coordinatorlayout:1.2.0",
+                    core                 : "androidx.core:core-ktx:1.7.21",
+                    datastorepref        : "androidx.datastore:datastore-preferences:1.0.0",
+                    fragment             : "androidx.fragment:fragment-ktx:1.5.3",
+
+                    junit                : "androidx.test.ext:junit:1.1.2",
+
+                    lifecycleLivedata    : "androidx.lifecycle:lifecycle-livedata-ktx:2.5.1",
+                    lifecycleRuntime     : "androidx.lifecycle:lifecycle-runtime-ktx:2.5.1",
+                    lifecycleViewmodel   : "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1",
+
+                    localbroadcastmanager: "androidx.localbroadcastmanager:localbroadcastmanager:1.0.0",
+
+                    pagingRuntime        : "androidx.paging:paging-runtime:$ANDROIDX_PAGING_VERSION",
+                    palette              : "androidx.palette:palette:1.0.0",
+                    recyclerview         : "androidx.recyclerview:recyclerview:1.2.1",
+
+                    room                 : "androidx.room:room-ktx:$ANDROIDX_ROOM_VERSION",
+                    roomPaging           : "androidx.room:room-paging:$ANDROIDX_ROOM_VERSION",
+                    roomCompiler         : "androidx.room:room-compiler:$ANDROIDX_ROOM_VERSION",
+                    roomRuntime          : "androidx.room:room-runtime:$ANDROIDX_ROOM_VERSION",
+
+                    swiperefreshlayout   : "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0",
+                    viewpager2           : "androidx.viewpager2:viewpager2:1.0.0",
+                    workmanager          : "androidx.work:work-runtime-ktx:2.7.1"
+            ],
+            google     : [
+                    core     : "com.google.android.play:core:1.10.0",
+                    gson     : "com.google.code.gson:gson:2.8.6",
+                    location : "com.google.android.gms:play-services-location:16.0.0",
+                    material : "com.google.android.material:material:1.9.0",
+                    safetynet: "com.google.android.gms:play-services-safetynet:18.0.1"
+            ],
+            firebase   : [
+                    analytics   : "com.google.firebase:firebase-analytics-ktx:17.5.0",
+                    config      : "com.google.firebase:firebase-config-ktx:21.3.0",
+                    dynamicLinks: "com.google.firebase:firebase-dynamic-links:21.1.0",
+                    messaging   : "com.google.firebase:firebase-messaging-ktx:23.1.2",
+                    bom         : "com.google.firebase:firebase-bom:31.4.0"
+            ],
+            di         : [
+                    dagger             : "com.google.dagger:dagger:$DAGGER_VERSION",
+                    daggerCompiler     : "com.google.dagger:dagger-compiler:$DAGGER_VERSION",
+                    daggerSupLib       : "com.google.dagger:dagger-android:$DAGGER_VERSION",
+                    daggerAndroidSupLib: "com.google.dagger:dagger-android-support:$DAGGER_VERSION",
+            ],
+            network    : [
+                    okHttp           : "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION",
+                    okHttpInterceptor: "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION",
+                    retrofit         : "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION",
+                    retrofitGson     : "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION",
+            ],
+            diagnostics: [
+                    timber: "com.jakewharton.timber:timber:4.7.1"
+            ],
+            tests      : [
+                    junitModuleTests: "junit:junit:5.9.3",
+                    junitSupLib     : "androidx.test.ext:junit:5.9.3",
+                    espresso        : "androidx.test.espresso:espresso-core:3.5.1",
+                    mockito         : "org.mockito:mockito-core:",
+                    robolectric     : "org.robolectric:robolectric:4.6.1:",
+                    truth           : "com.google.truth:truth:1.1.3:",
+                    mockWebServer   : "com.squareup.okhttp:mockwebserver:",
+            ],
+            compose    : [
+                    ui            : "androidx.compose.ui:ui:$COMPOSE_VERSION",
+                    uiTooling     : "androidx.compose.ui:ui-tooling-preview:$COMPOSE_VERSION",
+                    debugUiTooling: "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION",
+                    material      : "androidx.compose.material:material:$COMPOSE_VERSION",
+                    material3     : "androidx.compose.material3:material3:1.0.0-alpha11",
+                    activity      : "androidx.activity:activity-compose:1.7.1",
+                    viewModel     : "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
+            ],
+            coil       : [
+                    coil     : "io.coil-kt:coil:1.0.0",
+                    coilVideo: "io.coil-kt:coil-video:1.0.0"
+            ]
+    ]
+
+    libs = [
+            ui     : [
+                    dotsindicator   : "com.tbuonomo:dotsindicator:4.3",
+                    shimmerlayout   : "com.facebook.shimmer:shimmer:0.5.0",
+                    shimmerlayoutOld: "io.supercharge:shimmerlayout:2.1.0"
+            ],
+            support: [
+                    viewBindingDelegates: "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
+            ]
+    ]
+}

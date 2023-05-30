@@ -14,3 +14,9 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Coin"
 include ':app'
+include ':core:presentation'
+include ':core:network'
+include ':core:navigation'
+include ':core:database'
+include ':core:network:websocket'
+include ':core:network:restnetwork'
