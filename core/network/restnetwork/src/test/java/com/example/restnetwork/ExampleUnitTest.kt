@@ -1,4 +1,4 @@
-package com.example.network
+package com.example.restnetwork
 
 import org.junit.Test
 

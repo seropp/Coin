@@ -1,9 +1,11 @@
-plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
-}
-
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+apply plugin: 'com.google.firebase.appdistribution'
 apply from: "$rootProject.projectDir/dependencies.gradle"
+
 
 android {
     namespace 'com.example.coin'
@@ -15,12 +17,15 @@ android {
         targetSdk 33
         versionCode 1
         versionName "1.0"
-
+        resConfigs "en", "ru"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
 
     buildTypes {
         release {
@@ -36,6 +41,8 @@ android {
 
     kotlinOptions {
         jvmTarget = "1.8"
+        freeCompilerArgs += ["-opt-in=kotlin.RequiresOptIn"]
+
     }
 
     composeOptions {
@@ -57,7 +64,14 @@ dependencies {
     implementation platform.compose.activity
     debugImplementation platform.compose.debugUiTooling
 
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation platform.di.dagger
+    kapt platform.di.daggerCompiler
+    implementation platform.di.daggerSupLib
+    implementation platform.di.daggerAndroidSupLib
+
+    implementation project(':core:database')
+    implementation project(':core:navigation')
+    implementation project(':core:network:restnetwork')
+    implementation project(':core:network:websocket')
+    implementation project(':core:presentation')
 }

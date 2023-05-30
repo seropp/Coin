@@ -83,7 +83,6 @@ ext {
             di         : [
                     dagger             : "com.google.dagger:dagger:$DAGGER_VERSION",
                     daggerCompiler     : "com.google.dagger:dagger-compiler:$DAGGER_VERSION",
-                    daggerInject       : "javax.inject:javax.inject:$DAGGER_VERSION",
                     daggerSupLib       : "com.google.dagger:dagger-android:$DAGGER_VERSION",
                     daggerAndroidSupLib: "com.google.dagger:dagger-android-support:$DAGGER_VERSION",
             ],
