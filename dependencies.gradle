@@ -90,7 +90,7 @@ ext {
                     okHttp           : "com.squareup.okhttp3:okhttp:$OKHTTP_VERSION",
                     okHttpInterceptor: "com.squareup.okhttp3:logging-interceptor:$OKHTTP_VERSION",
                     retrofit         : "com.squareup.retrofit2:retrofit:$RETROFIT_VERSION",
-                    retrofitGson     : "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION",
+                    gson             : "com.squareup.retrofit2:converter-gson:$RETROFIT_VERSION",
             ],
             diagnostics: [
                     timber: "com.jakewharton.timber:timber:4.7.1"

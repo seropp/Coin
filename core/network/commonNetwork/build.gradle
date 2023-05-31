@@ -4,7 +4,7 @@ apply plugin: 'kotlin-kapt'
 apply from: "$rootProject.projectDir/dependencies.gradle"
 
 android {
-    namespace 'com.example.restnetwork'
+    namespace 'com.example.commonnetwork'
     compileSdk 33
 
     defaultConfig {
@@ -34,8 +34,6 @@ dependencies {
     implementation platform.di.dagger
     kapt platform.di.daggerCompiler
 
-    implementation platform.network.retrofit
+    implementation platform.network.gson
     implementation platform.network.okHttpInterceptor
-
-    implementation project(':core:network:commonNetwork')
 }
