@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.websocket'
+    namespace 'com.example.commonnetwork'
     compileSdk 33
 
     defaultConfig {

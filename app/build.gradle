@@ -71,7 +71,10 @@ dependencies {
 
     implementation project(':core:database')
     implementation project(':core:navigation')
+
     implementation project(':core:network:restnetwork')
+    implementation project(':core:network:commonNetwork')
     implementation project(':core:network:websocket')
+
     implementation project(':core:presentation')
 }
