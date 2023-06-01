@@ -77,4 +77,6 @@ dependencies {
     implementation project(':core:network:websocket')
 
     implementation project(':core:presentation')
+
+    implementation project(':feature:data')
 }
