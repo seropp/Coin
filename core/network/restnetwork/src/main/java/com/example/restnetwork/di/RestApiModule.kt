@@ -4,6 +4,7 @@ import com.example.commonnetwork.di.CommonNetworkModule
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
+import retrofit2.Converter
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
@@ -13,11 +14,12 @@ class RestApiModule {
     @Singleton
     @Provides
     fun provideRetrofit(
-        okHttpClient: OkHttpClient
+        okHttpClient: OkHttpClient,
+        converterFactory: Converter.Factory
     ): Retrofit =
         Retrofit.Builder()
             .client(okHttpClient)
             .baseUrl("https://api.coincap.io") // Constans
-//            .addConverterFactory()
+            .addConverterFactory(converterFactory)
             .build()
 }
