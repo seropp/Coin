@@ -4,6 +4,8 @@ import com.google.gson.Gson
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
+import retrofit2.Converter
+import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
 
@@ -25,4 +27,9 @@ class CommonNetworkModule {
     @Singleton
     @Provides
     fun provideGson(): Gson = Gson()
+
+    @Singleton
+    @Provides
+    fun provideConverterFactory(): Converter.Factory =
+        GsonConverterFactory.create()
 }
