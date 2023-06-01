@@ -105,13 +105,14 @@ ext {
                     mockWebServer   : "com.squareup.okhttp:mockwebserver:",
             ],
             compose    : [
-                    ui            : "androidx.compose.ui:ui:$COMPOSE_VERSION",
-                    uiTooling     : "androidx.compose.ui:ui-tooling-preview:$COMPOSE_VERSION",
-                    debugUiTooling: "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION",
-                    material      : "androidx.compose.material:material:$COMPOSE_VERSION",
-                    material3     : "androidx.compose.material3:material3:1.0.0-alpha11",
-                    activity      : "androidx.activity:activity-compose:1.7.1",
-                    viewModel     : "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1"
+                    ui              : "androidx.compose.ui:ui:$COMPOSE_VERSION",
+                    uiTooling       : "androidx.compose.ui:ui-tooling-preview:$COMPOSE_VERSION",
+                    debugUiTooling  : "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION",
+                    material        : "androidx.compose.material:material:$COMPOSE_VERSION",
+                    material3       : "androidx.compose.material3:material3:1.0.0-alpha11",
+                    activity        : "androidx.activity:activity-compose:1.7.1",
+                    viewModel       : "androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1",
+                    jetpacNavigation: "androidx.navigation:navigation-compose:2.4.0-alpha10"
             ],
             coil       : [
                     coil     : "io.coil-kt:coil:1.0.0",
