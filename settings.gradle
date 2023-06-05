@@ -16,8 +16,12 @@ rootProject.name = "Coin"
 include ':app'
 include ':core:database'
 include ':core:navigation'
+
 include ':core:network'
+include ':core:network:restNetwork'
+include ':core:network:restNetwork:restNetworkApi'
+include ':core:network:restNetwork:restNetworkImpl'
 include ':core:network:websocket'
 include ':core:network:commonNetwork'
-include ':core:network:restnetwork'
+
 include ':core:presentation'

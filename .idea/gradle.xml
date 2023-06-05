@@ -16,7 +16,9 @@
             <option value="$PROJECT_DIR$/core/navigation" />
             <option value="$PROJECT_DIR$/core/network" />
             <option value="$PROJECT_DIR$/core/network/commonNetwork" />
-            <option value="$PROJECT_DIR$/core/network/restnetwork" />
+            <option value="$PROJECT_DIR$/core/network/restNetwork" />
+            <option value="$PROJECT_DIR$/core/network/restNetwork/restNetworkApi" />
+            <option value="$PROJECT_DIR$/core/network/restNetwork/restNetworkImpl" />
             <option value="$PROJECT_DIR$/core/network/websocket" />
             <option value="$PROJECT_DIR$/core/presentation" />
           </set>
