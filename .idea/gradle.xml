@@ -21,6 +21,8 @@
             <option value="$PROJECT_DIR$/core/network/restNetwork/restNetworkImpl" />
             <option value="$PROJECT_DIR$/core/network/websocket" />
             <option value="$PROJECT_DIR$/core/presentation" />
+            <option value="$PROJECT_DIR$/data" />
+            <option value="$PROJECT_DIR$/data/feature" />
           </set>
         </option>
       </GradleProjectSettings>

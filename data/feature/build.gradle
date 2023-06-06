@@ -4,7 +4,7 @@ apply plugin: 'kotlin-kapt'
 apply from: "$rootProject.projectDir/dependencies.gradle"
 
 android {
-    namespace 'com.example.navigation'
+    namespace 'com.example.feature'
     compileSdk 33
 
     defaultConfig {
@@ -31,9 +31,8 @@ android {
 }
 
 dependencies {
-    //TODO: remove unused dependencies
-    implementation platform.compose.ui
-    implementation platform.compose.uiTooling
-    implementation 'androidx.navigation:navigation-compose:2.7.0-alpha01'
-    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation project(':core:network:restNetwork:restNetworkApi')
+
+    implementation platform.di.dagger
+    kapt platform.di.daggerCompiler
 }
