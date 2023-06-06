@@ -33,6 +33,9 @@ android {
 dependencies {
     implementation project(':core:network:restNetwork:restNetworkApi')
 
+    implementation platform.network.retrofit
+    implementation platform.network.gson
+
     implementation platform.di.dagger
     kapt platform.di.daggerCompiler
 }

@@ -1,5 +1,6 @@
 package com.example.feature.di
 
+import com.example.feature.source.network.AssetsService
 import com.example.restnetworkapi.di.ApiCreator
 import dagger.Module
 import dagger.Provides
@@ -10,10 +11,6 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun provideMyService(apiCreator: ApiCreator): MyService =
-        apiCreator.createApi(MyService::class.java)
-}
-
-interface MyService{
-
+    fun provideMyService(apiCreator: ApiCreator): AssetsService =
+        apiCreator.createApi(AssetsService::class.java)
 }

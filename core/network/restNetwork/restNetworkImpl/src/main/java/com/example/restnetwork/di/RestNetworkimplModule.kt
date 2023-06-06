@@ -10,6 +10,8 @@ import retrofit2.Converter
 import retrofit2.Retrofit
 import javax.inject.Singleton
 
+private const val BASE_URL = "https://api.coincap.io/"
+
 @Module(includes = [CommonNetworkModule::class])
 class RestNetworkimplModule {
 
@@ -22,13 +24,13 @@ class RestNetworkimplModule {
         ): Retrofit =
             Retrofit.Builder()
                 .client(okHttpClient)
-                .baseUrl("https://api.coincap.io") // Constans
+                .baseUrl(BASE_URL)
                 .addConverterFactory(converterFactory)
                 .build()
 
         @Singleton
         @Provides
-            fun provideApiCreator(
+        fun provideApiCreator(
             retrofit: Retrofit
         ): ApiCreator = object : ApiCreator {
             override fun <T> createApi(api: Class<T>): T =
