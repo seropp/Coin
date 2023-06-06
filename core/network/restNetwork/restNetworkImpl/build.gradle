@@ -37,6 +37,10 @@ dependencies {
     implementation platform.network.retrofit
     implementation platform.network.okHttpInterceptor
 
+
+    implementation platform.network.gson
+//    implementation platform.network.okHttpInterceptor
+
     implementation project(':core:network:restNetwork:restNetworkApi')
     implementation project(':core:network:commonNetwork')
 }
