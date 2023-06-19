@@ -82,4 +82,7 @@ dependencies {
 
     implementation project(':core:presentation')
     implementation project(':data:feature')
+
+    implementation project(':feature:currency:currencyapi')
+    implementation project(':feature:currency:currencyimpl')
 }

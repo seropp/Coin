@@ -23,6 +23,10 @@
             <option value="$PROJECT_DIR$/core/presentation" />
             <option value="$PROJECT_DIR$/data" />
             <option value="$PROJECT_DIR$/data/feature" />
+            <option value="$PROJECT_DIR$/feature" />
+            <option value="$PROJECT_DIR$/feature/currency" />
+            <option value="$PROJECT_DIR$/feature/currency/currencyapi" />
+            <option value="$PROJECT_DIR$/feature/currency/currencyimpl" />
           </set>
         </option>
       </GradleProjectSettings>

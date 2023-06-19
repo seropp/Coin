@@ -24,3 +24,5 @@ include ':core:network:commonNetwork'
 
 include ':core:presentation'
 include ':data:feature'
+include ':feature:currency:currencyapi'
+include ':feature:currency:currencyimpl'
