@@ -24,3 +24,5 @@ include ':core:network:commonNetwork'
 
 include ':core:presentation'
 include ':data:feature'
+include ':feature:quote:QuoteApi'
+include ':feature:quote:QuoteImpl'
