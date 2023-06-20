@@ -1,4 +1,4 @@
-package com.example.quotesapi
+package com.example.quoteapi
 
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
 import androidx.test.platform.app.InstrumentationRegistry
@@ -17,6 +17,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.quotesapi.test", appContext.packageName)
+        assertEquals("com.example.quoteapi.test", appContext.packageName)
     }
 }

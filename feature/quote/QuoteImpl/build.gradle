@@ -4,7 +4,7 @@ apply plugin: 'kotlin-kapt'
 apply from: "$rootProject.projectDir/dependencies.gradle"
 
 android {
-    namespace 'com.example.quotesapi'
+    namespace 'com.example.quoteimpl'
     compileSdk 33
 
     defaultConfig {
@@ -12,7 +12,9 @@ android {
         targetSdk 33
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+        vectorDrawables {
+            useSupportLibrary true
+        }
     }
 
     buildTypes {
@@ -28,12 +30,29 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        compose true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion '1.4.7'
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
 }
 
 dependencies {
+
+    implementation project(':feature:quote:QuoteApi')
     implementation platform.google.material
 
     implementation platform.compose.ui
+    implementation platform.compose.uiTooling
+    implementation platform.compose.material
+    implementation platform.compose.material3
+    implementation platform.compose.activity
     debugImplementation platform.compose.debugUiTooling
 
     implementation platform.di.dagger

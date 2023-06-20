@@ -1,4 +1,4 @@
-package com.example.quotesapi
+package com.example.quoteapi
 
 import org.junit.jupiter.api.Test
 

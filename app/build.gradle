@@ -82,6 +82,7 @@ dependencies {
 
     implementation project(':core:presentation')
     implementation project(':data:feature')
+    implementation project(':feature:quote:QuoteApi')
 
-    implementation project(':feature:quotes:QuotesApi')
+    implementation project(':feature:quote:QuoteImpl')
 }
