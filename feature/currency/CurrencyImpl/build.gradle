@@ -63,8 +63,8 @@ dependencies {
     androidTestImplementation 'androidx.compose.ui:ui-test-junit4'
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
+    implementation project(':feature:currency:CurrencyApi')
 
-    implementation project(':feature:currency:currencyapi')
 
     implementation project(':core:network:restNetwork:restNetworkApi')
 }

@@ -25,8 +25,8 @@
             <option value="$PROJECT_DIR$/data/feature" />
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/currency" />
-            <option value="$PROJECT_DIR$/feature/currency/currencyapi" />
-            <option value="$PROJECT_DIR$/feature/currency/currencyimpl" />
+            <option value="$PROJECT_DIR$/feature/currency/CurrencyApi" />
+            <option value="$PROJECT_DIR$/feature/currency/CurrencyImpl" />
             <option value="$PROJECT_DIR$/feature/quote" />
             <option value="$PROJECT_DIR$/feature/quote/QuoteApi" />
             <option value="$PROJECT_DIR$/feature/quote/QuoteImpl" />
