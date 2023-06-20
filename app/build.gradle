@@ -85,4 +85,7 @@ dependencies {
 
     implementation project(':feature:currency:currencyapi')
     implementation project(':feature:currency:currencyimpl')
+
+    implementation project(':feature:quote:QuoteApi')
+    implementation project(':feature:quote:QuoteImpl')
 }

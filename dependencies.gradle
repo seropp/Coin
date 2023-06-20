@@ -96,8 +96,9 @@ ext {
                     timber: "com.jakewharton.timber:timber:4.7.1"
             ],
             tests      : [
-                    junitModuleTests: "junit:junit:5.9.3",
-                    junitSupLib     : "androidx.test.ext:junit:5.9.3",
+                    junitModuleTests: "org.junit.jupiter:junit-jupiter:5.9.3",
+                    junitSupLib     : "org.junit.jupiter:junit-jupiter-api:5.9.3",
+                    junitPlatform   : "org.junit.platform:junit-platform-launcher:1.8.1",
                     espresso        : "androidx.test.espresso:espresso-core:3.5.1",
                     mockito         : "org.mockito:mockito-core:",
                     robolectric     : "org.robolectric:robolectric:4.6.1:",

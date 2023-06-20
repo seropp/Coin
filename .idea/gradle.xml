@@ -27,6 +27,9 @@
             <option value="$PROJECT_DIR$/feature/currency" />
             <option value="$PROJECT_DIR$/feature/currency/currencyapi" />
             <option value="$PROJECT_DIR$/feature/currency/currencyimpl" />
+            <option value="$PROJECT_DIR$/feature/quote" />
+            <option value="$PROJECT_DIR$/feature/quote/QuoteApi" />
+            <option value="$PROJECT_DIR$/feature/quote/QuoteImpl" />
           </set>
         </option>
       </GradleProjectSettings>
