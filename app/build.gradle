@@ -82,7 +82,10 @@ dependencies {
 
     implementation project(':core:presentation')
     implementation project(':data:feature')
-    implementation project(':feature:quote:QuoteApi')
 
+    implementation project(':feature:currency:CurrencyApi')
+    implementation project(':feature:currency:CurrencyImpl')
+
+    implementation project(':feature:quote:QuoteApi')
     implementation project(':feature:quote:QuoteImpl')
 }
